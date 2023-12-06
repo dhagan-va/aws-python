@@ -1,0 +1,7 @@
+{
+    "python.analysis.extraPaths": [
+        "./scripts/aws/python/common"
+    ],
+    "python.linting.pylintEnabled": true,
+    "python.linting.enabled": true
+}

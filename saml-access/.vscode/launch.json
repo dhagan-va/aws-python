@@ -1,0 +1,95 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+
+    
+
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}\\scripts\\aws\\saml-access",
+        },  {
+            "name": "Python: simulate",
+            "type": "python",
+            "request": "launch",
+            "program": "lambda-handler.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}\\scripts\\aws\\utility-lambdas\\simulation-handler",
+            "envFile": "${workspaceRoot}/dev.env"
+        },
+        {
+            "name": "Python: ped-835-batch-jobs ",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}\\scripts\\aws\\python\\cdk\\ped-835-batch-jobs",
+            "envFile": "${workspaceRoot}\\scripts\\aws\\python\\dev.env"
+        },
+        {
+            "name": "Python: ped-lambdas ",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}\\scripts\\aws\\python\\cdk\\ped-lambdas",
+            "envFile": "${workspaceRoot}\\scripts\\aws\\python\\dev.env",
+            "env" : {
+                "TEMP" : "C:\\Temp"
+            }
+        },
+        {
+            "name": "Python: ped-codebuild ",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}\\scripts\\aws\\python\\cdk\\ped-codebuild",
+            "envFile": "${workspaceRoot}\\scripts\\aws\\python\\dev.env"
+        },
+        {
+            "name": "Python: 270-lambdas socket test",
+            "type": "python",
+            "request": "launch",
+            "program": "socket-test-async.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}\\scripts\\aws\\270-lambdas",
+            "envFile": "${workspaceRoot}\\scripts\\aws\\270-lambdas\\dev.env"
+        },
+        {
+            "name": "Python: ped-xray ",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}\\scripts\\aws\\python\\cdk\\ped-xray",
+            "envFile": "${workspaceRoot}\\scripts\\aws\\python\\dev.env"
+        },
+        {
+            "name": "Python: ped-docker ",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}\\scripts\\docker\\python",
+            "args": ["--jmx", "dougy", "--out", "fresh"]
+
+            
+        },
+        {
+            "name": "Python: ped-270-batch-jobs ",
+            "type": "python",
+            "request": "launch",
+            "program": "app.py",
+            "console": "integratedTerminal",
+            "cwd": "${workspaceFolder}\\scripts\\aws\\python\\cdk\\ped-270-batch-jobs",
+            "envFile": "${workspaceRoot}\\scripts\\aws\\python\\dev.env"
+        }
+    ]
+}
