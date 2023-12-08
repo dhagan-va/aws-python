@@ -1,0 +1,23 @@
+version: "3.3"
+
+services:
+  run:
+    build: .
+    environment:
+      - AWS_ACCESS_KEY_ID=
+      - AWS_SECRET_ACCESS_KEY=
+      - RDS_HOSTNAME=10.1.1.75
+      - RDS_PORT=1433
+      - RDS_DB_NAME=db01
+      - RDS_USERNAME=sa
+      - RDS_PASSWORD=YourStrong@Passw0rd
+    ports:
+      - 8080:8080
+
+  sql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    environment:
+      - ACCEPT_EULA=Y
+      - MSSQL_SA_PASSWORD=YourStrong@Passw0rd
+    ports:
+      - 1433:1433

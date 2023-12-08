@@ -1,0 +1,23 @@
+CREATE TABLE Report (
+    [Status] varchar(10),
+    [TypeName] varchar(20),
+    [Type] char(1),
+    [Date] datetime2,
+    [Title] varchar(50),
+    [Source] varchar(50),
+    [Code] char(10),
+    [Category] varchar(50),
+    [CategoryId] char(3),
+    [Before] varchar(20),
+    [Address] varchar(100),
+    [Coding1] varchar(20),
+    [Coding2] varchar(20),
+    [Coding3] varchar(20),
+    [Coding4] varchar(20),
+    [Coding5] varchar(20),
+    [CodingType] varchar(20),
+    [After] varchar(20),
+    [Number] int,
+    [Coding6] varchar(20),
+    [Coding7] varchar(20)
+)
